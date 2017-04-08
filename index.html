@@ -3,8 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+
 </head>
 <body>
-<h1>Hello World!</h1>
-</body>
+
+<header>
+    Air Control
+</header>
+<div id="wrapper">
+    <div id="player">
+        <canvas id="gamePlayer" width="1170" height="730"></canvas>
+    </div>
+    <div id="control-panel">
+        <div class="left-column">
+            <input type="checkbox" class="checkbox" id="checkbox"/>
+            <label for="checkbox">Mute</label>
+        </div>
+        <div class="right-column">
+            <label id="fullscreen"></label>
+        </div>
+    </div>
+
+    <div class="about-game">
+        <input class="hide" id="hd-2" type="checkbox">
+        <label for="hd-2">For more information about game</label>
+
+        <div class="information">
+            <p>In this simple yet surprisingly addictive game you take on the
+                role
+                of Air Traffic Controller. It is your job to direct airplanes to
+                runways while avoiding collisions.
+            </p>
+            <p>
+                To direct the airplanes, you must select the airplane by
+                clicking on it and holding the left mouse button down to
+                indicate the path to one of the four runways, as in the image
+                below:
+            </p>
+            <img src="img/introduction.png" width="800" height="370"/>
+        </div>
+    </div>
+</div>
+
+
+<div style="display:none;">
+    <img id="source" src="/img/play.png"
+         width="500" height="500">
+</div>
+
+<script type="text/javascript"
+        src="build/manifest.14d338817f3ebe51bf32.js"></script><script
+        type="text/javascript"
+        src="build/vendor.c2c5b5167c6fbc667b85.js"></script><script
+        type="text/javascript"
+        src="build/bundle.563bccd58656bf454f51.js"></script></body>
 </html>
