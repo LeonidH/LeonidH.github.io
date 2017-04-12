@@ -7,6 +7,14 @@
 
     <link rel="stylesheet" href="css/style.css">
 
+    <script type="text/javascript"
+            src="js/manifest.75b1bc17b7590f9e1211.js" defer></script>
+    <script
+            type="text/javascript"
+            src="js/vendor.b7b963fbe0667ebd27b9.js" defer></script>
+    <script
+            type="text/javascript"
+            src="js/bundle.ed11947ce1dc8f6bc438.js" defer></script>
 
 </head>
 <body>
@@ -14,11 +22,11 @@
 <header>
     Air Control
 </header>
-<div id="wrapper">
-    <div id="player">
-        <canvas id="gamePlayer" width="1170" height="730"></canvas>
-    </div>
-    <div id="control-panel">
+
+<div class="wrapper">
+    <canvas id="gamePlayer" width="1170" height="730"></canvas>
+
+    <div class="control-panel">
         <div class="left-column">
             <input type="checkbox" class="checkbox" id="checkbox"/>
             <label for="checkbox">Mute</label>
@@ -29,8 +37,8 @@
     </div>
 
     <div class="about-game">
-        <input class="hide" id="hd-2" type="checkbox">
-        <label for="hd-2"> More information about game</label>
+        <input class="hide" id="hd" type="checkbox">
+        <label for="hd">More information about game</label>
 
         <div class="information">
             <p>In this simple yet surprisingly addictive game you take on the
@@ -48,7 +56,9 @@
             <p>
                 For more information, you can view the video:
             </p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/IencUC1EFFg" frameborder="0" allowfullscreen></iframe>
+            <iframe width="640" height="360"
+                    src="https://www.youtube.com/embed/Vl_ZBz9dKdM?rel=0&amp;showinfo=0"
+                    frameborder="0" allowfullscreen></iframe>
         </div>
     </div>
 </div>
@@ -56,13 +66,8 @@
 
 <div style="display:none;">
     <img id="source" src="/img/play.png"
-         width="500" height="500">
+         width="300" height="300">
 </div>
 
-<script type="text/javascript"
-        src="build/manifest.2c0f4a9f07c21a81360a.js"></script><script
-        type="text/javascript"
-        src="build/vendor.8dde8e141ca0568c82fd.js"></script><script
-        type="text/javascript"
-        src="build/bundle.e23c28a20915653373ef.js"></script></body>
+</body>
 </html>

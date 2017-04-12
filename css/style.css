@@ -14,7 +14,7 @@ header {
     -moz-box-sizing: content-box;
     box-sizing: content-box;
     border: none;
-    font: normal 150px "Aclonica", Helvetica, sans-serif;
+    font: normal 150px 'Aclonica', Helvetica, sans-serif;
     color: #98b0d8;
     text-align: center;
     -o-text-overflow: ellipsis;
@@ -22,18 +22,18 @@ header {
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
-#wrapper {
+div.wrapper {
     width: 1170px;
     margin: 0 auto;
 }
 
 canvas {
-    background: url("../img/map.png") no-repeat;
+    background: url('../img/map.png') no-repeat;
     background-size: 100% 100%;
     display: block;
     cursor: pointer;
     border-radius: 10px;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     -webkit-box-shadow: 0 0 30px 0 #515151;
     box-shadow: 0 0 30px 0 #515151;
@@ -44,9 +44,6 @@ canvas:hover {
     box-shadow: 0 0 60px 0 #515151;
 }
 
-#control-panel {
-    margin-top: 10px;
-}
 
 .checkbox + label {
     cursor: pointer;
@@ -106,8 +103,9 @@ canvas:hover {
     transform: scale(1.2, 1.2);
 }
 
-#control-panel {
+div.control-panel {
     display: table;
+    margin-top: 10px;
     width: 1170px;
 }
 
@@ -191,7 +189,7 @@ canvas:hover {
 .hide + label:before {
     background-color: #1e90ff;
     color: #fff;
-    content: "\002B";
+    content: '\002B';
     display: block;
     float: left;
     font-size: 14px;
@@ -207,7 +205,7 @@ canvas:hover {
 }
 
 .hide:checked + label:before {
-    content: "\2212";
+    content: '\2212';
 }
 .information {
     font-size: 16pt;
